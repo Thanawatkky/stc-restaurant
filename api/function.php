@@ -45,22 +45,7 @@ date_default_timezone_set('Asia/Bangkok');
         return update($sql);
     
     }
-    function table_choice($ch) {
-        if($ch == 1) {
-            return "เล็ก";
-        }else if($ch == 2) {
-            return "กลาง";
-        }else if($ch == 3) {
-            return "ใหญ่";
-        }
-    }
-    function table_booking($bk) {
-        if($bk == 0) {
-            return "ว่าง";
-        }else{
-            return "ติดจอง";
-        }
-    }
+
     // cart systems
     function addToCart($pro_id, $qty) {
         if(!isset($_SESSION['cart'])) {
